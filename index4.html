@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Resistration Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=0.1">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background: url("");
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+           
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background:url("https://images.pexels.com/photos/390426/pexels-photo-390426.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+
+    
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background:url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #f4f5f4;
+}
+
+
+.container header {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: white;
+}
+.Gender label{
+    color: white;
+}
+.form :where(.input-box input) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: white;
+}
+
+
+.form button {
+  height: 55px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: rgba(230, 199, 28, 0.979);
+}
+.form button:hover {
+  background: orange;
+}
+
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+        </style>
+        </head>
+    <body>
+        <section class="container">
+            <header>Registration Form</header>
+            <form action="#" class="form">
+              <div class="input-box">
+                    <label>First Name:</label></div>
+                    
+                    <div class="input-box">
+                    <input type="text" name="fname" id="name" placeholder="Enter Your First Name" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Last Name:</label>
+                    <br>
+                    <input type="text" name="lname" id="name" placeholder="Enter Your Last Name" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Email:</label>
+                    <br>
+                    <input type="email" name="email" id="name" placeholder="Enter Your Valid Email Id" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Branch:</label>
+                    <br>
+                    <select id="Branch" name="" class="">
+                        <option value="IT">IT</option>
+                        <option value="CSE">CSE</option>
+                        <option value="EE">EE</option>
+                        <option value="Civil">Civil</option>
+                        <option value="EEE">EEE</option>
+                        <option value="production">production</option>
+                        <option value="ME">ME</option>
+                    </select>
+                    </div>
+                    <div class="input-box">
+                      <label>Year:</label>
+                      <br>
+                      <select id="Year" name="" class="">
+                          <option value="1st">1st</option>
+                          <option value="2nd">2nd</option>
+                          <option value="3rd">3rd</option>
+                          <option value="4th">4th</option>
+                      </select>
+                      </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Registration Number:</label>
+                    <br>
+                    <input type="number" name="Registration Number" id="name" placeholder="Your Collage Registration Number" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                    <label>Enter Password:</label>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="Password is admin" required />
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                <label>Select Your First Domain:</label>
+                <select id="Branch" name="" class="">
+                    <option value="Tech">Tech</option>
+                    <option value="Markating And Sponsership">Markating And Sponsership</option>
+                    <option value="Event Management">Event Management</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Graphic Designe">Graphic Designe</option>
+                    <option value="Public Relation">Public Relation</option>
+                    <option value="Video Editing">Video Editing</option>
+                </select>
+                </div>
+                <br><br>
+                <div class="input-box">
+                <label>Select Your Second Domain:</label>
+                <select id="Branch" name="" class="">
+                    <option value="Tech">Tech</option>
+                    <option value="Markating And Sponsership">Markating And Sponsership</option>
+                    <option value="Event Management">Event Management</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Graphic Designe">Graphic Designe</option>
+                    <option value="Public Relation">Public Relation</option>
+                    <option value="Video Editing">Video Editing</option>
+                </select>
+                </div>
+                   <br><br>
+                   <div class="gender">
+                    
+                    <label>Gender:</label>
+                    <br><br>
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" >
+                        <label for="check-female">Male</label>
+                      </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" >
+                        <label for="check-female">Female</label>
+                      </div>
+                      <div class="gender">
+                        <input type="radio" id="check-other" name="gender" >
+                        <label for="check-other">prefer not to say</label>
+                      </div>
+                      </div>
+                   <br><br>
+                   <button class="input-box">
+                   <input  onclick="index3()" type="submit" value="submit" name="submit" id="submit">
+                   
+                   </button>
+                    
+                </form>
+        <script>
+            function index3(){
+                var password = document.getElementById("password").value;
+                if(password=="admin"){
+                    alert("Registered Succesfully");
+                }
+                else{
+                    alert("Invalid Information");
+                    return;
+                }
+            }
+        </script>
+    
+    </body>
+</html>
